@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios
   s.libraries =  'z.tbd'
-  s.source_files  = "Minizip/**/*.{m,h,swift}", "Vendor/**/*.{c,h}"
+  s.source_files  = "Minizip/**/*.{m,h,swift}", "Vendor/Minizip/aes/*.{c,h}", "Vendor/Minizip/*.{c,h}"
+  s.exclude_files  = "Vendor/Minizip/*win32.{c,h}", "Vendor/Minizip/mini*.*"
   s.ios.deployment_target = "10.0"
 
 end
