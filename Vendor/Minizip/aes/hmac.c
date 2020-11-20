@@ -31,7 +31,7 @@
 
  This is an implementation of HMAC, the FIPS standard keyed hash function
 */
-
+#include <memory.h>
 #include "hmac.h"
 #include "brg_types.h"
 
